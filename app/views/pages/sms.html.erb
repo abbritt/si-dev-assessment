@@ -1,2 +1,14 @@
-<h1>Pages#sms</h1>
-<p>Find me in app/views/pages/sms.html.erb</p>
+<head></head>
+<body>
+<div></div>
+<h1>Success!</h1>
+<p>You sent " <%= params[:message] %>"</p>
+<p>To: <%= params[:user][:number] %></p>
+
+<form action="https://britt-si-dev-assessment-bjsaunders.c9users.io/">
+    <input type="submit" value="Send another text?" />
+</form>
+</body> 
+
+
+<!--Why isn't the send to number showing up here? I've tried everything! 

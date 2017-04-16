@@ -1,6 +1,24 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<!DOCTYPE html>
+<html>
+<head>
+<title></title></head>
+<body>
 
+
+<div></div>
+<h1>Text-O-Matic</h1>
+<h2>britt saunders</h2>
+<p>
 <%= form_tag("/sms/send", method: "post") do %>
-<!-- add form elements here -->
+<%= text_area_tag(:message, "Send texts using your browser! Type your message here.", size: "79x6") %><br>
+</p>
+<h1>What phone number are you texting?</h1>
+<br>
+<%= telephone_field(:user, :phone) %>
+<%= submit_tag("send") %>
+
 <% end %>
+</body> 
+</html>
+
+<!--what is this text showing up on the bottom of the page?!?
